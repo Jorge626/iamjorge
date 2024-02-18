@@ -3,9 +3,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import GitHubLogo from '@/public/github-logo.svg';
-import LinkedInLogo from '@/public/linkedin-logo.svg';
-import MainLogo from '@/public/main-logo.svg';
 import { PiHamburger, PiXCircle } from "react-icons/pi";
 import { useState } from 'react';
 import { buildClassName } from '@/utils/buildClassName';
@@ -37,16 +34,10 @@ const Navbar = () => {
   }
 
   return (
-    <div className='w-full h-24 top-0 bg-primary-base'>
+    <div className='w-full h-24 top-0 bg-background'>
       <div className='container mx-auto px-16 h-full'>
-        <div className='flex justify-between items-center h-full'>
+        <div className='flex justify-center items-center h-full'>
           {/* Desktop/Tablet */}     
-          <Image 
-            src={MainLogo}
-            alt="Jorge Aranda's Logo. Displays a line art drawing of person on a laptop with a speech bubble that contains a </> symbol. 'Jorge Aranda' is displayed in front of the logo."
-            height={96}
-            priority={true}
-          />
           <ul className='max-sm:hidden flex gap-x-8'>
             {
               links.map((item) => {
@@ -63,24 +54,6 @@ const Navbar = () => {
               })
             }
           </ul>
-          <div className='max-sm:hidden flex gap-4'>
-            <a href='https://github.com/Jorge626'>
-              <Image
-                src={GitHubLogo}
-                alt="GitHub Logo. Links to Jorge's GitHub."
-                height={24}
-                width={24}
-              />
-            </a>
-            <a href='https://www.linkedin.com/in/jorge-aranda-934731132/'>
-              <Image
-                src={LinkedInLogo}
-                alt="LinkedIn Logo. Links to Jorge's LinkedIn."
-                height={24}
-                width={24}
-              />
-            </a>
-          </div>
 
           {/* Mobile */}
           <div onClick={handleNavOpen} className='sm:hidden z-10'>
@@ -111,7 +84,6 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-      <hr/>
     </div>
   )
 }

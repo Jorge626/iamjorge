@@ -7,20 +7,21 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
+        text_color: "#FAF7FF",
         primary: {
-          light: "#E8E6DC",
-          base: "#D9D5C5",
-          dark: "#ADAA9E",
+          light: "#414141",
+          base: "#121212",
+          dark: "#0D0D0D",
         },
         secondary: {
-          light: "#F3B57C",
-          base: "#EE9747",
-          dark: "#BE7939"
+          light: "#B6B6F5",
+          base: "#8685EF",
+          dark: "#5E5DA7"
         },
         accent: {
-          light: "#A2DFC5",
-          base: "#7FD1AE",
-          dark: "#66A78B",
+          light: "#E0FCE4",
+          base: "#D3FBD8",
+          dark: "#A9C9AD",
         }
       },
     },

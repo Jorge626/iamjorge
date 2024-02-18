@@ -11,12 +11,10 @@ type ButtonProps = {
 
 const backgroundClass = {
     filled: 'bg-secondary-base hover:bg-secondary-light',
-    outline: 'bg-white hover:bg-primary-base/10'
+    outline: 'bg-primary-base hover:bg-primary-light'
 }
 
 const textClass = {
-    filled: 'text-white',
-    outline: 'text-primary-base hover:underline',
     "32px": 'min-h-[32px]',
     "40px": 'min-h-[40px]'
 }
@@ -25,8 +23,8 @@ const Button = ({children, className, size="32px", variant="filled", ...rest }: 
     return (
         <AriaButton
         className={buildClassName(
-            'inline-flex items-center rounded-md px-6 font-medium border-secondary-base border-[1px] border-solid',
-            `${backgroundClass[variant]} ${textClass[variant]} ${textClass[size]}`,
+            'inline-flex items-center rounded-md px-6 font-medium border-secondary-base border-[1px] border-solid text-text_color',
+            `${backgroundClass[variant]} ${textClass[size]}`,
             className
             )}
         {...rest}>
