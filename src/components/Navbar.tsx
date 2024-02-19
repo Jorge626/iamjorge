@@ -34,7 +34,7 @@ const Navbar = () => {
   }
 
   return (
-    <div className='w-full h-24 top-0 bg-background'>
+    <div className='w-full h-24 top-0 bg-background py-10'>
       <div className='container mx-auto px-16 h-full'>
         <div className='flex justify-center items-center h-full'>
           {/* Desktop/Tablet */}     

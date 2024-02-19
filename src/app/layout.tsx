@@ -21,7 +21,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={buildClassName(
         robotoFlex.className, 
-        "bg-primary-base text-text_color"
+        "bg-primary-base text-text_color min-h-svh flex flex-col"
         )}
       >
         <Navbar/>
