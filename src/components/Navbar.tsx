@@ -1,6 +1,5 @@
 "use client"
 
-import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { PiHamburger, PiXCircle } from "react-icons/pi";
@@ -15,11 +14,16 @@ const links = [
   },
   {
     id: 2,
-    title: 'Portfolio',
-    link: '/portfolio'
+    title: 'About',
+    link: '/about'
   },
   {
     id: 3,
+    title: 'Expression',
+    link: '/expression'
+  },
+  {
+    id: 4,
     title: 'Contact',
     link: '/contact'
   }
