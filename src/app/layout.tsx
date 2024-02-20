@@ -8,8 +8,8 @@ import Footer from "@/components/Footer";
 const robotoFlex = Roboto_Flex({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: 'Jorge Aranda',
-  description: 'Personal Website for Jorge Aranda',
+  title: 'I am Jorge',
+  description: 'A website dedicated to the expression of Jorge',
 }
 
 export default function RootLayout({
